@@ -7,20 +7,20 @@ body {
   padding: 50px 20px;
   margin: 0;
   overflow: hidden; /* Empêche les barres de défilement */
-  position: relative; /* Nécessaire pour positionner les flocons correctement */
+  position: relative; /* Nécessaire pour positionner les éléments */
 }
 
 /* Titre principal */
 h1 {
   font-size: 3rem;
   margin-bottom: 40px;
-  z-index: 10; /* S'assurer que le texte soit au-dessus des flocons */
+  z-index: 10; /* S'assurer que le texte soit au-dessus des autres éléments */
 }
 
 /* Bloc du lien */
 .links {
   margin: 30px 0;
-  z-index: 10; /* S'assurer que le bouton soit au-dessus des flocons */
+  z-index: 10; /* S'assurer que le lien soit au-dessus des autres éléments */
 }
 
 /* Bouton Telegram */
@@ -33,11 +33,10 @@ h1 {
   border-radius: 10px;
   display: inline-block;
   transition: background-color 0.3s ease;
-  z-index: 10; /* S'assurer que le bouton soit au-dessus des flocons */
+  z-index: 10; /* S'assurer que le bouton soit au-dessus des autres éléments */
 }
 
 /* Effet au survol du bouton */
 .links a:hover {
   background-color: #1b7cab;
 }
-
