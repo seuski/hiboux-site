@@ -16,14 +16,21 @@ body {
 /* Titre principal */
 h1 {
   font-size: 3rem;
-  margin-bottom: 20px; /* Réduire l'espace sous le titre */
-  z-index: 10; /* S'assurer que le texte soit au-dessus des autres éléments */
+  margin-bottom: 20px;
+  z-index: 10;
+  transition: transform 0.3s ease, color 0.3s ease; /* Transition fluide */
+}
+
+/* Effet au survol du titre */
+h1:hover {
+  transform: scale(1.1) rotate(5deg); /* Agrandir et faire pivoter légèrement */
+  color: #ff007f; /* Changer la couleur du texte au survol */
 }
 
 /* Bloc du lien */
 .links {
-  margin: 20px 0; /* Réduire l'espace autour du bouton */
-  z-index: 10; /* S'assurer que le lien soit au-dessus des autres éléments */
+  margin: 20px 0;
+  z-index: 10;
 }
 
 /* Bouton Telegram */
@@ -37,7 +44,7 @@ h1 {
   display: inline-block;
   background-size: 400% 400%;
   animation: gradientAnimation 5s ease infinite;
-  z-index: 10; /* S'assurer que le bouton soit au-dessus des autres éléments */
+  z-index: 10;
   transition: background-color 0.3s ease;
 }
 
@@ -56,5 +63,5 @@ h1 {
 
 /* Effet au survol du bouton */
 .links a:hover {
-  background-color: #1b7cab; /* Garde une couleur uniforme au survol */
+  background-color: #1b7cab;
 }
