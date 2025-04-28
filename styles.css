@@ -1,8 +1,6 @@
 /* Corps de la page */
 body {
-  background: linear-gradient(45deg, #ff007f, #00ff7f, #ff7f00, #7f00ff, #00ffff);
-  background-size: 400% 400%;
-  animation: gradientAnimation 10s ease infinite;
+  background-color: #0d1117;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
   text-align: center;
@@ -12,13 +10,6 @@ body {
   justify-content: center; /* Centrer verticalement */
   align-items: center; /* Centrer horizontalement */
   height: 100vh; /* Utiliser toute la hauteur de la fenêtre */
-}
-
-/* Animation du dégradé */
-@keyframes gradientAnimation {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
 }
 
 /* Titre principal */
