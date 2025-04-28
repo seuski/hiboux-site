@@ -7,9 +7,13 @@ function generateSnowflakes() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
     snowflake.textContent = '❄'; // Symbole de flocon de neige
-    snowflake.style.left = `${Math.random() * 100}vw`; // Position aléatoire
-    snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Durée d'animation aléatoire
-    snowflake.style.animationDelay = `${Math.random() * 10}s`; // Délai d'animation aléatoire
+
+    // Positionnement aléatoire
+    snowflake.style.left = `${Math.random() * 100}vw`; // Position horizontale aléatoire
+    snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Durée d'animation aléatoire (entre 5s et 10s)
+    snowflake.style.animationDelay = `${Math.random() * 5}s`; // Délai d'animation aléatoire (démarrage différé)
+    snowflake.style.fontSize = `${Math.random() * 10 + 15}px`; // Taille des flocons (entre 15px et 25px)
+
     snowflakeContainer.appendChild(snowflake);
   }
 }
