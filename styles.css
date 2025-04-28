@@ -87,3 +87,38 @@ h1 span:nth-child(15):hover {
 h1 span:hover {
   transform: translateY(-10px); /* Le mouvement vers le haut */
 }
+
+/* Bloc du lien */
+.links {
+  margin: 20px 0;
+}
+
+/* Bouton Telegram */
+.links a {
+  background-color: #229ED9;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Multicolor pour le bouton au survol */
+.links a:hover {
+  background-color: #1b7cab;
+  color: #ff007f;
+  animation: colorChange 1.5s infinite;
+}
+
+/* Animation multicolor */
+@keyframes colorChange {
+  0% { color: #ff007f; }
+  25% { color: #00ff7f; }
+  50% { color: #ff7f00; }
+  75% { color: #7f00ff; }
+  100% { color: #ff00ff; }
+}
