@@ -41,22 +41,3 @@ h1 {
   background-color: #1b7cab;
 }
 
-/* Neige */
-.snowflake {
-  position: absolute;
-  color: white;
-  font-size: 24px;
-  user-select: none;
-  z-index: 1; /* S'assurer que les flocons soient derrière le contenu */
-  opacity: 0.8;
-  animation: snow 10s linear infinite;
-}
-
-@keyframes snow {
-  0% {
-    transform: translateY(-10px) rotate(0deg);
-  }
-  100% {
-    transform: translateY(100vh) rotate(360deg);
-  }
-}
