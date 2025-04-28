@@ -6,6 +6,7 @@ body {
   text-align: center;
   padding: 50px 20px;
   margin: 0;
+  overflow: hidden; /* Empêche les barres de défilement avec les flocons */
 }
 
 /* Titre principal */
@@ -43,14 +44,16 @@ h1 {
   font-size: 24px;
   user-select: none;
   z-index: 1000;
+  opacity: 0.8;
   animation: snow 10s linear infinite;
 }
 
+/* Animation neige */
 @keyframes snow {
   0% {
-    transform: translateY(-10px);
+    transform: translateY(-10px) rotate(0deg);
   }
   100% {
-    transform: translateY(100vh);
+    transform: translateY(100vh) rotate(360deg);
   }
 }
