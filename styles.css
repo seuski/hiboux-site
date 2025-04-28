@@ -4,82 +4,59 @@ body {
   color: #ffffff;
   font-family: 'Arial', sans-serif;
   text-align: center;
+  padding: 50px 20px;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centrer verticalement */
-  align-items: center; /* Centrer horizontalement */
-  height: 100vh; /* Utiliser toute la hauteur de la fenêtre */
 }
 
 /* Titre principal */
 h1 {
   font-size: 3rem;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+  margin-bottom: 40px;
 }
 
-/* Chaque lettre sera dans un span */
+/* Style du texte HIBOUX TELEGRAM au survol */
 h1 span {
   display: inline-block;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-/* Effet de couleur multicolore pour chaque lettre */
-h1 span:nth-child(1):hover { color: #ff007f; }
-h1 span:nth-child(2):hover { color: #00ff7f; }
-h1 span:nth-child(3):hover { color: #ff7f00; }
-h1 span:nth-child(4):hover { color: #7f00ff; }
-h1 span:nth-child(5):hover { color: #ff00ff; }
-h1 span:nth-child(6):hover { color: #00ffff; }
-h1 span:nth-child(8):hover { color: #ff4d00; }
-h1 span:nth-child(9):hover { color: #0099ff; }
-h1 span:nth-child(10):hover { color: #00ff00; }
-h1 span:nth-child(11):hover { color: #ff1493; }
-h1 span:nth-child(12):hover { color: #1e90ff; }
-h1 span:nth-child(13):hover { color: #ffd700; }
-h1 span:nth-child(14):hover { color: #32cd32; }
-h1 span:nth-child(15):hover { color: #ff6347; }
-
-/* Effet au survol de chaque lettre */
 h1 span:hover {
-  transform: translateY(-10px); /* Le mouvement vers le haut */
+  transform: translateY(-10px);
+  color: #ff6347; /* Couleur qui change au survol */
 }
 
 /* Bloc du lien */
 .links {
-  margin: 20px 0;
+  margin: 30px 0;
 }
 
 /* Bouton Telegram */
 .links a {
-  background-color: #229ED9; /* Couleur de fond initiale */
-  color: #ffffff; /* Texte en blanc */
+  background-color: #229ED9;
+  color: #ffffff;
   text-decoration: none;
   padding: 15px 30px;
   font-size: 1.5rem;
   border-radius: 10px;
   display: inline-block;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: background-color 1s ease-in-out; /* Douce transition */
-  animation: backgroundColorChange 5s infinite alternate; /* Animation douce */
+  transition: background-color 0.3s ease;
 }
 
-/* Animation douce du fond multicolore */
-@keyframes backgroundColorChange {
-  0% { background-color: #ff007f; }
-  25% { background-color: #00ff7f; }
-  50% { background-color: #ff7f00; }
-  75% { background-color: #7f00ff; }
-  100% { background-color: #00ffff; }
+/* Effet au survol du bouton */
+.links a:hover {
+  background-color: #1b7cab;
 }
 
-/* Texte "Lien en ligne" sous le bouton */
+/* Texte de statut */
 .status {
   margin-top: 20px;
   font-size: 1.2rem;
-  color: #00ff7f; /* Couleur verte pour l'emoji */
-  font-weight: bold;
+  color: #aaaaaa;
+}
+
+/* Compteur de visiteurs */
+.visitors {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #aaaaaa;
 }
