@@ -75,3 +75,11 @@ h1 span:hover {
   75% { background-color: #7f00ff; }
   100% { background-color: #00ffff; }
 }
+
+/* Texte "Lien en ligne" sous le bouton */
+.status {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #00ff7f; /* Couleur verte pour l'emoji */
+  font-weight: bold;
+}
