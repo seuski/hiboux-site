@@ -16,6 +16,20 @@ body {
 h1 {
   font-size: 3rem;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Chaque lettre sera dans un span */
+h1 span {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Effet au survol de chaque lettre */
+h1 span:hover {
+  transform: translateY(-10px); /* Le mouvement vers le haut */
+  color: #ff007f; /* Changer la couleur de la lettre au survol */
 }
 
 /* Bloc du lien */
