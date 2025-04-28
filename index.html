@@ -4,23 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HIBOUX TELEGRAM</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
 </head>
 <body>
 
-  <h1>
-    <span>H</span><span>I</span><span>B</span><span>O</span><span>U</span><span>X</span>
-    <span>&nbsp;</span> <!-- Ajout de l'espace entre les mots -->
-    <span>T</span><span>E</span><span>L</span><span>E</span><span>G</span><span>R</span><span>A</span><span>M</span>
-  </h1>
+  <h1>HIBOUX TELEGRAM</h1>
 
-  <!-- Bouton Telegram -->
   <div class="links">
     <a href="https://t.me/+GD2FwRn9lZY5ZmIx" target="_blank">Rejoindre le Telegram</a>
   </div>
 
-  <!-- Texte "Lien en ligne" avec emoji sous le bouton -->
-  <p class="status">Lien en ligne ✅</p>
+  <div class="status">
+    <p>Lien en ligne ✅</p>
+  </div>
+
+  <div class="visitors">
+    <p>Nombre de visiteurs : <span id="visitor-count">Loading...</span></p>
+  </div>
 
   <script src="script.js"></script>
 
