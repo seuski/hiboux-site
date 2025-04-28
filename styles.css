@@ -36,9 +36,21 @@ h1 {
   background-color: #1b7cab;
 }
 
-/* Compteur de visiteurs */
-.visitors {
-  margin-top: 50px;
-  font-size: 1.5rem;
-  color: #aaaaaa;
+/* Neige */
+.snowflake {
+  position: absolute;
+  color: white;
+  font-size: 24px;
+  user-select: none;
+  z-index: 1000;
+  animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(100vh);
+  }
 }
